@@ -51,9 +51,9 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: executable-${{ matrix.os }}
+        name: pandoc-inmemory-gui-${{ matrix.os }}
         path: |
-          pandoc-inmemory-gui.exe
-          pandoc-inmemory-gui.bin
-          pandoc-inmemory-gui
+          main.exe
+          main.bin
+          main
         retention-days: 30
